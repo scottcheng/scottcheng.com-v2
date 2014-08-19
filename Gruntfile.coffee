@@ -84,6 +84,18 @@ module.exports = (grunt) ->
           src: ['*']
           dest: '<%= paths.dist %>images'
         ]
+      static:
+        files: [
+          expand: true
+          cwd: '<%= paths.src %>'
+          src: [
+            '*'
+            '!views'
+            '!styles'
+            '!scripts'
+          ]
+          dest: '<%= paths.dist %>'
+        ]
 
 
     clean:
