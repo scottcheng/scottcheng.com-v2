@@ -35,7 +35,7 @@ module.exports = (grunt) ->
           import: [
             'nib'
             'normalize.css'
-            'iconfont.css'
+            'scoticon.css'
           ]
         files:
           '<%= paths.dist %>styles/index.css': '<%= paths.src %>styles/index.styl'
