@@ -1,1 +1,1 @@
-<scottcheng.com>
+[scottcheng.com](http://scottcheng.com)
