@@ -20,6 +20,26 @@ body
   min-height 400px
   font-family Ratio, sans-serif
   color #000
+  transition color .25s, background .25s
+  &.color
+    color #fff
+    #logo
+      svg path
+        fill #fff
+  &.logo
+    background #f79264
+  &.name
+    background #5bcbf1
+  &.github
+    background #333
+  &.instagram
+    background #3f729b
+  &.twitter
+    background #55acee
+  &.facebook
+    background #3b5998
+  &.email
+    background #db4437
 
 .container
   width 100%
@@ -31,14 +51,16 @@ body
   svg
     size 65px
     margin-left (-@width / 2)
+    path
+      transition fill .25s
 
 #name
   absolute top 50% left
   width 100%
   text-align center
   font-size 45px
-  line-height @font-size
-  margin-top (-@line-height / 2)
+  line-height 1
+  margin-top (-@font-size / 2)
 
 #links
   absolute bottom 10% left 5%
@@ -66,8 +88,10 @@ body
       margin-left 0
 
   #name
+    width auto
     text-align left
     font-size 50px
+    margin-top (-@font-size / 2)
 
   #links
     absolute bottom 15% left
@@ -77,6 +101,7 @@ body
 @media screen and (min-width: 1000px)
   #name
     font-size 80px
+    margin-top (-@font-size / 2)
 
   #links
     .icon
