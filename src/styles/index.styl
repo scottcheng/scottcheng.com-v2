@@ -1,10 +1,79 @@
 *
   box-sizing border-box
 
-body
-  font-size 16px
-  font-family Lato, sans-serif
-  padding 50px
+::selection
+  background #000
+  color #fff
+  text-shadow none
+::-moz-selection
+  background #000
+  color #fff
+  text-shadow none
 
-.icon-cool
-  margin-left 10px
+html, body
+  height 100%
+
+body
+  min-height 400px
+  font-family Ratio, sans-serif
+
+.container
+  width 100%
+  padding 20px
+  text-align center
+
+#logo
+  absolute top 10% left 50%
+  svg
+    size 65px
+    margin-left (-@width / 2)
+
+#name
+  absolute top 50% left
+  width 100%
+  text-align center
+  font-size 45px
+  line-height @font-size
+  margin-top (-@line-height / 2)
+
+#links
+  absolute bottom 10% left 5%
+  width 90%
+  .icon
+    display inline-block
+    width 20%
+    font-size 30px
+    &.icon-send
+      transform scale(.85)
+
+@media screen and (min-width: 550px)
+  .container
+    min-height 600px
+    text-align left
+    position relative
+    size 100%
+    width 60%
+    margin 0 auto
+
+  #logo
+    absolute top 15% left
+    svg
+      size 80px
+      margin-left 0
+
+  #name
+    text-align left
+    font-size 50px
+
+  #links
+    absolute bottom 15% left
+    .icon
+      width 60px
+
+@media screen and (min-width: 1000px)
+  #name
+    font-size 80px
+
+  #links
+    .icon
+      width 80px
