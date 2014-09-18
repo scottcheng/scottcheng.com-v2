@@ -18,7 +18,7 @@ html, body
 
 body
   min-height 400px
-  min-width 360px
+  min-width 320px
   position relative
   font-family Ratio, sans-serif
   color #000
@@ -41,13 +41,7 @@ body
   &.email
     background #db4437
 
-.container
-  width 100%
-  padding 20px
-  text-align center
-
 #logo
-  absolute top 10% left 50%
   svg
     size 65px
     margin-left (-@width / 2)
@@ -56,21 +50,41 @@ body
 
 #name
   absolute top 50% left
+  line-height 1
+  transform translateY(-50%)
+
+#links
+  .icon
+    display inline-block
+    &.icon-send
+      transform scale(.85)
+
+// min-width: 0px
+.container
   width 100%
   text-align center
-  font-size 45px
-  line-height 1
-  margin-top (-@font-size / 2)
+
+#logo
+  absolute top 10% left 50%
+
+#name
+  width 100%
+  text-align center
+  font-size 42px
 
 #links
   absolute bottom 10% left 5%
   width 90%
+  font-size 22px
   .icon
-    display inline-block
     width 16%
+
+@media screen and (min-width: 400px)
+  #name
+    font-size 45px
+
+  #links
     font-size 30px
-    &.icon-send
-      transform scale(.85)
 
 @media screen and (min-width: 721px)
   .container
@@ -91,17 +105,16 @@ body
     width auto
     text-align left
     font-size 50px
-    margin-top (-@font-size / 2)
 
   #links
     absolute bottom 15% left
+    width auto
     .icon
       width 60px
 
 @media screen and (min-width: 1000px)
   #name
     font-size 80px
-    margin-top (-@font-size / 2)
 
   #links
     .icon
