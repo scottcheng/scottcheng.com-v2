@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'scoticon';
-	src:url('fonts/scoticon.eot?-wngv3p');
-	src:url('fonts/scoticon.eot?#iefix-wngv3p') format('embedded-opentype'),
-		url('fonts/scoticon.woff?-wngv3p') format('woff'),
-		url('fonts/scoticon.ttf?-wngv3p') format('truetype'),
-		url('fonts/scoticon.svg?-wngv3p#scoticon') format('svg');
+	src:url('fonts/scoticon.eot?kopq2q');
+	src:url('fonts/scoticon.eot?#iefixkopq2q') format('embedded-opentype'),
+		url('fonts/scoticon.ttf?kopq2q') format('truetype'),
+		url('fonts/scoticon.woff?kopq2q') format('woff'),
+		url('fonts/scoticon.svg?kopq2q#scoticon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-500px:before {
+	content: "\e600";
+}
 .icon-facebook:before {
 	content: "\f082";
 }
@@ -31,9 +34,6 @@
 }
 .icon-github:before {
 	content: "\f09b";
-}
-.icon-envelope:before {
-	content: "\f0e0";
 }
 .icon-instagram:before {
 	content: "\f16d";

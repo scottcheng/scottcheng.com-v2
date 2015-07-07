@@ -1,6 +1,6 @@
 $ ->
   $body = $ document.body
-  ['github', 'dribbble', 'instagram', 'twitter', 'facebook', 'email'].forEach (key) ->
+  ['github', 'dribbble', 'instagram', 'px', 'twitter', 'email'].forEach (key) ->
     selector = "##{key}"
     className = "color #{key}"
     $body
